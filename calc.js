@@ -1,4 +1,4 @@
-document.getElementById().onclick = function add() {
+document.getElementById(console).onclick = function add() {
     
     
 }
