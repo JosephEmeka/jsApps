@@ -2,15 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 .mainContainer{
     display:flex;
     justify-content: center;
     align-items: center;
-
 }
+
+
 .calculator{
     padding: 15px;
     border-radius: 30px;
@@ -19,6 +19,7 @@
     grid-template-columns: repeat(4, 80px);
     gap: 1px;
 }
+
 
 input{
    grid-column: span 4;
@@ -34,4 +35,9 @@ input{
     background-color:white;
     border-radius: 5px;
     cursor:default;
+    
+}
+
+input button:hover {
+    background-color: #708d09;
 }
