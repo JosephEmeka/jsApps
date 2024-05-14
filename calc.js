@@ -1,5 +1,8 @@
+const dotBtn = document.querySelector('[data-dot]');
 
-const result = document.querySelector('display');
+dotBtn.addEventListener('click', function() { appendToScreen('.'); });
+
+const result = document.querySelector('#calculator-screen');
 const digits = document.querySelectorAll('[data-digit]');
 const operations = document.querySelectorAll('[data-operation]');
 const equalsBtn = document.querySelector('[data-equals]');
@@ -9,20 +12,19 @@ digits.forEach(digit => digit.addEventListener('click', function() { appendToScr
 operations.forEach(operation => operation.addEventListener('click', function() { appendToScreen(operation.textContent); }));
 equalsBtn.addEventListener('click', calculate);
 clearBtn.addEventListener('click', clearScreen);
-dotBtn.addEventListener('click', function() { appendToScreen('.'); });
 
 function appendToScreen(value) {
-    document.getElementById('display').value += value;
+   result.textContent += value;
 }
 
 function calculate() {
     try {
-        document.getElementById('display').value = eval(document.getElementById('display').value);
+        document.getElementById('display').value = eval(document.getElementById('calculator-screen').value);
     } catch (error) {
         document.getElementById('display').value = 'Error';
     }
 }
 
 function clearScreen() {
-    document.getElementById('display').value = '';
+    document.getElementById('calculator-screen').value = '';
 }

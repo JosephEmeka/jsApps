@@ -14,7 +14,6 @@
 .calculator{
     padding: 15px;
     border-radius: 30px;
-    box-shadow: inset 5px, 5px,12px, #ffffff;
     display: grid ;
     grid-template-columns: repeat(4, 80px);
     gap: 1px;
