@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="TodoList.css" rel="stylesheet" />
+    <title>Task Management Application</title>
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <div id="page-banner">
+            <h1 class="title"> Focus Application</h1>
+            <p>Todos Done rightly</p>
+            <form id="search-task">
+                <input type="text" placeholder="Search Tasks..." />
+            </form>
+        </div>
+    </header>
+    <div id="task-list">
+        <div class="titleArea" >
+            <h2 class="title">Create a task and manage your Schedule here</h2>
+        </div>
+
+        <ul>
+            <li >
+                <input type ="checkbox" class="name"> Name of the Wind</input>
+                <span class="delete">delete</span>
+            </li>
+        </ul>
+        <form id="add-task">
+            <div class="taskDetails">
+                <p>Title</p>
+                <input type="text" placeholder="Add A Task..." id="taskTitle" />
+            </div>
+            <div class="taskDetails">
+                <p>Start Date</p>
+                <input type="date" id="startDate" />
+            </div>
+            <div class="taskDetails">
+                <p>End Date</p>
+                <input type="date" id="endDate" />
+            </div>
+            <div class="taskDetails">
+                <p>Description</p>
+                <input type="text" id="taskDescription" />
+            </div>
+            <div class="todolistDetails">
+                <select class="todoListOptions">
+                    <option class="AddTaskOptions" value="task1">Add Task</option>
+                    <option class="taskOptions" value="task2">Update Task</option>
+                    <option class="taskOptions" value="task3">Display Task</option>
+                </select>
+            </div>
+        </form>
+
+    </div>
+
+
+</div>
+<script src="Todo.js"></script>
+</body>
+</html>
+
