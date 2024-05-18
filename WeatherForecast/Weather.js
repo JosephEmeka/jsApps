@@ -28,7 +28,7 @@ searchBtn.addEventListener('click', () => {
         .catch(error => {
             console.error(error);
             locationValue.textContent = 'City not found';
-            temperatureValue.textContent = '';
-            descriptionValue.textContent = '';
+            temperatureValue.textContent = 'Temperature not Found';
+            descriptionValue.textContent = 'Description Not found';
         });
 });
